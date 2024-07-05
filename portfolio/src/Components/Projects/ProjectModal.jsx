@@ -6,9 +6,8 @@ import styled from 'styled-components'
 
 
 const Card = styled.div`
-    width: 330px;
-    height: 490px;
-    background-color: ${({ theme }) => theme.card};
+   
+    background-color: ${({ theme }) => theme.card -10};
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
@@ -17,15 +16,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 14px;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
-    }
-    &:hover ${Button} {
-        display: block;
-    }
+   
 `
 
 const Image = styled.img`
@@ -48,7 +39,7 @@ const Tag = styled.span`
     font-size: 12px;
     font-weight: 400;
     color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
+    background-color: ${({ theme }) => theme.primary + 25};
     padding: 2px 8px;
     border-radius: 10px;
 `
@@ -77,7 +68,7 @@ const Date = styled.div`
     font-size: 12px;
     margin-left: 2px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: ${({ theme }) => theme.text_secondary};
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
@@ -85,7 +76,7 @@ const Date = styled.div`
 
 const Description = styled.div`
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: ${({ theme }) => theme.text_secondary};
     overflow: hidden;
     margin-top: 8px;
     display: -webkit-box;
@@ -122,8 +113,20 @@ export default function ProjectModal({ project, close, isOpen }) {
               transition
               className="w-full max-w-md rounded-xl bg-white/5 p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
             >
+              <Card>
+
               <Title>
-                {project.title}
+                <div className='flex'>
+                  {project.title}
+                  <div className="mx-auto mr-0">
+                    <Button
+                      className="inline-flex items-center gap-2 rounded-md py-1.5 px-3 text-sm/6 font-semibold text-black shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-red-600 data-[focus]:outline-1  data-[open]:bg-gray-700"
+                      onClick={close}
+                      >
+                      X
+                    </Button>
+                  </div>
+                </div>
               </Title>
 
               <Date>
@@ -142,19 +145,13 @@ export default function ProjectModal({ project, close, isOpen }) {
               </Tags>
 
               <Link to={project.github} target='_blank'>
-                <Description>
+                <Description className='underline decoration-4 hover:decoration-sky-400'>
                   Click here to open GitHub Repo. 👆
                 </Description>
               </Link>
 
-              <div className="mt-4">
-                <Button
-                  className="inline-flex items-center gap-2 rounded-md bg-black py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-black-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
-                  onClick={close}
-                >
-                  Got it, thanks!
-                </Button>
-              </div>
+                </Card>
+
             </DialogPanel>
           </div>
         </div>
