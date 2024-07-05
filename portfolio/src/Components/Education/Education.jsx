@@ -160,8 +160,6 @@ let line = styled.div`${({ theme }) => theme.text_primary};`
 console.log("hi" + line)
 
 
-fds
-
 const Education = ({ darkmode }) => {
     console.log("Mode: " + darkmode)
     return (
