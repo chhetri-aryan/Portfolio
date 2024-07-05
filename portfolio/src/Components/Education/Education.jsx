@@ -1,14 +1,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import { education, experiences } from '../../data/constants';
-import EducationCard from '../Cards/EducationCard';
+import { education } from '../../data/constants';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaStar } from "react-icons/fa6";
@@ -163,7 +156,6 @@ const Card = styled.div`
   border: 0.1px solid #854ce6;
 `;
 
-// console.log(({ theme }) => theme.text_primary)
 let line = styled.div`${({ theme }) => theme.text_primary};`
 console.log("hi" + line)
 
@@ -200,6 +192,7 @@ const Education = ({ darkmode }) => {
                                             <Body>
                                                 <Name>{element.school}</Name>
                                                 <Degree>{element.degree}</Degree>
+                                                <Grade>{element.grade}</Grade>
                                             </Body>
 
 
