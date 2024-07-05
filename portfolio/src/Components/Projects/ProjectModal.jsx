@@ -1,22 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import ProjectModal from '../Projects/ProjectModal'
+import { Button, Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 
-const Button = styled.button`
-    display: none;
-    width: 100%;
-    padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
-    font-size: 14px;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.8s ease-in-out;
-`
+
 const Card = styled.div`
     width: 330px;
     height: 490px;
@@ -42,7 +30,6 @@ const Card = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 180px;
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
     box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
@@ -98,12 +85,11 @@ const Date = styled.div`
 
 const Description = styled.div`
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 90};
+    color: ${({ theme }) => theme.text_secondary + 99};
     overflow: hidden;
     margin-top: 8px;
     display: -webkit-box;
     max-width: 100%;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 `
@@ -123,40 +109,59 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project}) => {
-    let [isOpen, setIsOpen] = useState(false)
+export default function ProjectModal({ project, close, isOpen }) {
 
-    function open() {
-        setIsOpen(true)
-      }
-    
-      function close() {
-        setIsOpen(false)
-      }
-    
-    return (
-        <Card onClick={open}>
-            <Image src={project.image}/>
-            <Tags>
+  return (
+    <>
+
+
+      <Dialog open={isOpen} as="div" className="relative z-10 focus:outline-none" onClose={close}>
+        <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-md rounded-xl bg-white/5 p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+            >
+              <Title>
+                {project.title}
+              </Title>
+
+              <Date>
+                {project.date}
+              </Date>
+
+              <Image src= {project.image}/>
+              <Description>
+                {project.description}
+              </Description>
+              
+              <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag key={index} >{tag}</Tag>
                 ))}
             </Tags>
-            <Details>
-                <Title>{project.title}</Title>
-                <Date>{project.date}</Date>
-                <Description>{project.description}</Description>
-            </Details>
-            <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
-                ))}
-            </Members>
-            {/* <Button>View Project</Button> */}
-            <ProjectModal project={project} isOpen={isOpen} close={close} />
-        </Card>
 
-    )
+            <Link to={project.github} target='_blank'>
+            <Description>
+            Click here to open GitHub Repo. 👆
+              </Description></Link>
+          
+
+            
+
+
+              <div className="mt-4">
+                <Button
+                  className="inline-flex items-center gap-2 rounded-md bg-black py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-black-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+                  onClick={close}
+                >
+                  Got it, thanks!
+                </Button>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
+    </>
+  )
 }
-
-export default ProjectCards

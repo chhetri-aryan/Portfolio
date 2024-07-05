@@ -367,14 +367,13 @@ export const projects = [
     title: "Todo",
     date: "Jun 2024 - Jul 2024",
     description:
-    "",
+    "The To-Do application is a sleek and functional task management tool built using ReactJS, showcasing a solid understanding of HTML, CSS, JavaScript, React components, hooks, and Redux for state management. With Tailwind CSS providing a modern and responsive design, the application allows users to effortlessly add, view, and delete tasks. The use of React hooks ensures efficient state and lifecycle management, while Redux offers a centralized store for handling the state of tasks seamlessly. This project not only highlights core frontend development skills but also emphasizes effective state management and responsive design principles.",
     image:
 "https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/346023987-b3a74461-dabd-412e-91a8-9fc2791bed15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240705%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240705T061633Z&X-Amz-Expires=300&X-Amz-Signature=bf963ff112f93acfeecf5c391e0603997e96ec3bae937cf40f2a0d4a2bf0f2a2&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820219947",
     tags: [
-      "Python",
-      "Open AI",
-      "LinkedIn API",
-      "API"
+      "ReactJS",
+      "REDUX",
+      
     ],
     category: "web app",
     github: "https://github.com/chhetri-aryan/AI-IN-VEHICLE-COUNTING-",
