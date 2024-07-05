@@ -11,9 +11,7 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1NlhNK3HQiUbkE8oLwU3RjQZ-2c569deI/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/aryan-chhetri/",
-  twitter: "https://twitter.com/RishavChanda",
-  insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
+
 };
 
 export const skills = [
