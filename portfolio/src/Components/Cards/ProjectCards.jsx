@@ -145,7 +145,7 @@ const ProjectCards = ({project}) => {
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
-                <Description>{project.description}</Description>
+                <Description className='text-justify'>{project.description}</Description>
             </Details>
             <Members>
                 {project.member?.map((member) => (

@@ -147,7 +147,7 @@ const Card = styled.div`
   transition: all 0.3s ease-in-out;
   &:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   @media only screen and (max-width: 768px) {
     padding: 10px;
@@ -197,7 +197,7 @@ const Education = ({ darkmode }) => {
                                         </Top>
 
                                         <Description>
-                                            <Span>{element.desc}</Span>
+                                            <Span className='text-justify'>{element.desc}</Span>
                                         </Description>
                                     </Card>
 

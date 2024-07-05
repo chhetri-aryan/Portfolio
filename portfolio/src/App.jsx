@@ -37,11 +37,10 @@ function App() {
           <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
           <Body>
            <HeroSection />
+            <Wrapper>
             <Skills />
             <Project />
-            <Wrapper>
             <Education darkMode={darkMode} />
-
             </Wrapper>
             <Contact />
           </Body>

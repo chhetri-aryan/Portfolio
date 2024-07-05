@@ -130,25 +130,22 @@ export default function ProjectModal({ project, close, isOpen }) {
                 {project.date}
               </Date>
 
-              <Image src= {project.image}/>
+              <Image src={project.image} />
               <Description>
                 {project.description}
               </Description>
-              
+
               <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag key={index} >{tag}</Tag>
+                  <Tag key={index} >{tag}</Tag>
                 ))}
-            </Tags>
+              </Tags>
 
-            <Link to={project.github} target='_blank'>
-            <Description>
-            Click here to open GitHub Repo. 👆
-              </Description></Link>
-          
-
-            
-
+              <Link to={project.github} target='_blank'>
+                <Description>
+                  Click here to open GitHub Repo. 👆
+                </Description>
+              </Link>
 
               <div className="mt-4">
                 <Button
