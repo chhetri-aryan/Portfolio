@@ -136,7 +136,7 @@ export const education = [
     school: "Lovely Professional University",
     date: "Aug 2021 - Jul 2025",
     grade: "7.77 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Lovely Professional University, Jalandhar. I have completed 6 semesters and have a CGPA of 7.77. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Lovely Professional University, Jalandhar. I have completed 6 semesters and have a CGPA of 7.77.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
   {
