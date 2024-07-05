@@ -369,7 +369,7 @@ export const projects = [
     description:
     "",
     image:
-"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/345807856-2e0b81c0-dec3-406d-b728-0c77af236309.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T110440Z&X-Amz-Expires=300&X-Amz-Signature=de6eb8f7159867135b7e4a3cc87a0f69de1632e528f1c63fbe0ee8f06f96ecfb&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820379489",
+"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/346023987-b3a74461-dabd-412e-91a8-9fc2791bed15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240705%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240705T061633Z&X-Amz-Expires=300&X-Amz-Signature=bf963ff112f93acfeecf5c391e0603997e96ec3bae937cf40f2a0d4a2bf0f2a2&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820219947",
     tags: [
       "Python",
       "Open AI",
