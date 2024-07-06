@@ -18,7 +18,7 @@ const Navbar = ({ toggleTheme }) => {
   var theme = useTheme();
 
   return (
-    <Nav>
+    <Nav className='h-screen'>
       <NavbarContainer>
         <NavLogo to='/'>
           <a style={{ display: "flex", alignItems: "center", color: theme.primary, marginBottom: '20;', cursor: 'pointer' }}>
@@ -31,6 +31,7 @@ const Navbar = ({ toggleTheme }) => {
             setIsOpen(!isOpen)
           }} />
         </MobileIcon>
+
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href='#skills'>Skills</NavLink>
@@ -43,7 +44,7 @@ const Navbar = ({ toggleTheme }) => {
             className={`${enabled ? 'bg-blue-600' : 'bg-gray-700'
               } relative inline-flex h-6 w-11 items-center rounded-full`}
           >
-            <span className="sr-only">Enable notifications</span>
+            <span className="sr-only">Enable dark mode</span>
             <span
               className={`${enabled ? 'translate-x-6' : 'translate-x-1'
                 } inline-block h-4 w-4 transform rounded-full bg-white transition`}
@@ -74,9 +75,7 @@ const Navbar = ({ toggleTheme }) => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
 
-
-
-            <GitHubButton style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} href={Bio.github} target="_blank">Github Profile</GitHubButton>
+            <GitHubButton style={{ background: `${theme.primary}`, color: 'white', width: 'max-content' }} href={Bio.github} target="_blank">Github Profile</GitHubButton>
           </MobileMenu>
         }
       </NavbarContainer>

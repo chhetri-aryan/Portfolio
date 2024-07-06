@@ -9,7 +9,7 @@ const Project = () => {
   const [toggle, setToggle] = useState('all');
   
   return (
-    <Container id="projects">
+    <Container id="projects" className=''> 
       <Wrapper>
         <Title>Projects</Title>
         <Desc>

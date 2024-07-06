@@ -72,10 +72,7 @@ const Skill = styled.div`
     max-width: 330px;
     padding: 10px 36px;
   }
-
-
 `
-
 const SkillTitle = styled.h2`
   font-size: 28px;
   font-weight: 600;
@@ -121,7 +118,7 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   return (
-    <Container id="skills">
+    <Container id="skills" className='h-fit'>
       <Wrapper>
         <Title>Skills</Title>
         <Desc>Here are some of my skills on which I have been working on for the past 2 years.

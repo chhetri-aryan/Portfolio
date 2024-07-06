@@ -36,8 +36,8 @@ function App() {
         <Router>
           <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
           <Body>
-           <HeroSection />
             <Wrapper>
+           <HeroSection />
             <Skills />
             <Project />
             <Education darkMode={darkMode} />
