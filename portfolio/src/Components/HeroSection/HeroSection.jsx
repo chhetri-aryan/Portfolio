@@ -7,7 +7,7 @@ import Spline from '@splinetool/react-spline';
 
 const HeroSection = () => {
     return (
-        <div id="about" className='mb-52'>
+        <div id="about" className=''>
             <HeroContainer>
                 <HeroInnerContainer >
                     <div className='grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-32'>
