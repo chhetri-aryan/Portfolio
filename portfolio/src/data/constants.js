@@ -201,7 +201,7 @@ export const projects = [
       "Tailwind CSS"
     ],
     category: "web app",
-    github: "https://github.com/chhetri-aryan/MiniTwit",
+    github: "https://github.com/chhetri-aryan/SNEAK-",
     webapp: "",
   },
   {
@@ -219,7 +219,7 @@ export const projects = [
      "ASP.NET"
     ],
     category: "web app",
-    github: "https://github.com/chhetri-aryan/MiniTwit",
+    github: "https://github.com/chhetri-aryan/Contact-List",
     webapp: "",
   },
   {
@@ -254,7 +254,7 @@ export const projects = [
       "API"
     ],
     category: "machine learning",
-    github: "https://github.com/chhetri-aryan/AI-IN-VEHICLE-COUNTING-",
+    github: "https://github.com/chhetri-aryan/LinkedIn-Post-Automation",
     webapp: "",
   },
   {
@@ -271,8 +271,8 @@ export const projects = [
       
     ],
     category: "web app",
-    github: "https://github.com/chhetri-aryan/AI-IN-VEHICLE-COUNTING-",
-    webapp: "",
+    github: "https://github.com/chhetri-aryan/Todo-List",
+    webapp: "https://todo-red-gamma.vercel.app/",
   },
 ];
 

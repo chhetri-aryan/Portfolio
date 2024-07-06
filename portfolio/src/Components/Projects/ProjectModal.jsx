@@ -146,9 +146,17 @@ export default function ProjectModal({ project, close, isOpen }) {
 
               <Link to={project.github} target='_blank'>
                 <Description className='underline decoration-4 hover:decoration-sky-400'>
-                  Click here to open GitHub Repo. 👆
+                  GitHub Repo. 👆
                 </Description>
               </Link>
+              {
+                project.webapp && 
+                <Link to={project.webapp} target='_blank'>
+                <Description className='underline decoration-4 hover:decoration-sky-400'>
+                 Hosted App. 👆
+                </Description>
+              </Link>
+              }
 
                 </Card>
 
