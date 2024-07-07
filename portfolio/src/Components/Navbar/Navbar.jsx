@@ -21,9 +21,9 @@ const Navbar = ({ toggleTheme }) => {
     <Nav className='h-screen'>
       <NavbarContainer>
         <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: theme.primary, marginBottom: '20;', cursor: 'pointer' }}>
+          <div style={{ display: "flex", alignItems: "center", color: theme.primary, marginBottom: '20', cursor: 'pointer' }}>
             <DiFsharp size="3rem"/> <Span>Portfolio</Span>
-          </a>
+          </div>
         </NavLogo>
 
         <MobileIcon>

@@ -157,11 +157,9 @@ const Card = styled.div`
 `;
 
 let line = styled.div`${({ theme }) => theme.text_primary};`
-console.log("hi" + line)
 
 
 const Education = ({ darkmode }) => {
-    console.log("Mode: " + darkmode)
     return (
         <Container id="education">
             <Wrapper>

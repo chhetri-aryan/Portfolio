@@ -42,8 +42,8 @@ const Project = () => {
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === 'all' && projects
-            .map((project) => (
-              <ProjectCard project={project}/>
+            .map((project, index) => (
+              <ProjectCard key={index} project={project}/>
             ))}
           {projects
             .filter((item) => item.category == toggle)

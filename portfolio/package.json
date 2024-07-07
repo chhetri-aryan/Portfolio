@@ -17,6 +17,7 @@
     "@mui/material": "^5.15.20",
     "@react-three/fiber": "^8.2.2",
     "@splinetool/react-spline": "^3.1.1",
+    "@splinetool/runtime": "^1.8.9",
     "framer-motion-3d": "^11.2.0",
     "ms-cursor": "^1.2.1",
     "react": "^18.2.0",

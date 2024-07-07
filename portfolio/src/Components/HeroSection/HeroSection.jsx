@@ -3,9 +3,16 @@ import { HeroContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle, Res
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
 import Spline from '@splinetool/react-spline';
+import { useState } from 'react';
 
 
 const HeroSection = () => {
+    const [loading, setIsLoading] = useState(true);
+    const handleLoad = () => {
+        setIsLoading(false);
+        console.log(loading)
+    }
+
     return (
         <div id="about" className=''>
             <HeroContainer>
@@ -32,10 +39,14 @@ const HeroSection = () => {
                         </div>
 
                         <div id="Right" className='lg:order-2 sm:order-1 lg:-m-56'>
+                                          
+                            {
+                                loading ? <div className='text-white'> hello wolrd </div> :
+                                <Spline scene="https://prod.spline.design/UTFMrrw71-cpURyo/scene.splinecode"/
+                                
+                                >
+                            }
                             
-                        <Spline scene="https://prod.spline.design/UTFMrrw71-cpURyo/scene.splinecode"
-                        className=''
-                        />
                         </div>
                     </div>
                 </HeroInnerContainer>
