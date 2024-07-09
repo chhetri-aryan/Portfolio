@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 `
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const toggleTheme = () => {
     setDarkMode(prevMode => !prevMode);
   };
@@ -33,7 +33,7 @@ function App() {
 
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <Router>
-          <Navbar toggleTheme={toggleTheme} darkMode={true} />
+          <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
           <Body>
             <Wrapper>
            <HeroSection />
