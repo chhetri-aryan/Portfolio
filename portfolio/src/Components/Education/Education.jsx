@@ -161,7 +161,7 @@ let line = styled.div`${({ theme }) => theme.text_primary};`
 
 const Education = ({ darkmode }) => {
     return (
-        <Container id="education">
+        <Container id="education" className='z-auto'>
             <Wrapper>
                 <Title>Education</Title>
                 <Desc>

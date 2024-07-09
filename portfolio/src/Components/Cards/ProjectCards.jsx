@@ -136,7 +136,7 @@ const ProjectCards = ({project}) => {
     
     return (
         <Card onClick={open}>
-            <Image src={project.image} className={project.category === 'android app ' ? 'object-contain' : ''}/>
+            <Image src={project.image} className={project.category === 'android app' ? 'object-contain' : ''}/>
             <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag key={index} >{tag}</Tag>
