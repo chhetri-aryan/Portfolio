@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+::selection {
+  background: #DFFF00;
+  color: #222A35;
+}
 
 *{
   cursor:none!important;
