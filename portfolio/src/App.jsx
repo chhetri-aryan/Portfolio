@@ -33,7 +33,7 @@ function App() {
 
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <Router>
-          <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
+          <Navbar toggleTheme={toggleTheme} darkMode={true} />
           <Body>
             <Wrapper>
            <HeroSection />
