@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 const Card = styled.div`
    
-    background-color: ${({ theme }) => theme.card -10};
+    background-color: ${({ theme }) => theme.card - 10};
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
@@ -36,10 +36,11 @@ const Tags = styled.div`
 `
 
 const Tag = styled.span`
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 25};
+    
+    background-color: ${({ theme }) => theme.primary + 15};
     padding: 2px 8px;
     border-radius: 10px;
 `
@@ -65,7 +66,7 @@ const Title = styled.div`
 `
 
 const Date = styled.div`
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 2px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary};
@@ -115,50 +116,53 @@ export default function ProjectModal({ project, close, isOpen }) {
             >
               <Card>
 
-              <Title>
-                <div className='flex'>
-                  {project.title}
-                  <div className="mx-auto mr-0">
-                    <Button
-                      className="inline-flex items-center gap-2 rounded-md py-1.5 px-3 text-sm/6 font-semibold text-black shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-red-600 data-[focus]:outline-1  data-[open]:bg-gray-700"
-                      onClick={close}
+                <Title>
+                  <div className='flex'>
+                    <div>
+                      {project.title}
+                      <Date>
+                        {project.date}
+                      </Date>
+                    </div>
+
+                    <div className="mx-auto mr-0">
+                      
+                      <Button
+                        className="inline-flex items-center gap-2 rounded-md py-1.5 px-3 text-sm/6 font-semibold  shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-red-600 data-[focus]:outline-1  data-[open]:bg-gray-700"
+                        onClick={close}
                       >
-                      X
-                    </Button>
+                        X
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </Title>
+                </Title>
 
-              <Date>
-                {project.date}
-              </Date>
-
-              <Image src={project.image} />
-              <Description>
-                {project.description}
-              </Description>
-
-              <Tags>
-                {project.tags?.map((tag, index) => (
-                  <Tag key={index} >{tag}</Tag>
-                ))}
-              </Tags>
-
-              <Link to={project.github} target='_blank'>
-                <Description className='underline decoration-4 hover:decoration-sky-400'>
-                  GitHub Repo. 👆
+                <Image src={project.image} />
+                <Description>
+                  {project.description}
                 </Description>
-              </Link>
-              {
-                project.webapp && 
-                <Link to={project.webapp} target='_blank'>
-                <Description className='underline decoration-4 hover:decoration-sky-400'>
-                 Hosted App. 👆
-                </Description>
-              </Link>
-              }
 
-                </Card>
+                <Tags>
+                  {project.tags?.map((tag, index) => (
+                    <Tag key={index} >{tag}</Tag>
+                  ))}
+                </Tags>
+
+                <Link to={project.github} target='_blank'>
+                  <Description className='underline decoration-4 hover:decoration-sky-400'>
+                    GitHub Repo. 👆
+                  </Description>
+                </Link>
+                {
+                  project.webapp &&
+                  <Link to={project.webapp} target='_blank'>
+                    <Description className='underline decoration-4 hover:decoration-sky-400'>
+                      Hosted App. 👆
+                    </Description>
+                  </Link>
+                }
+
+              </Card>
 
             </DialogPanel>
           </div>

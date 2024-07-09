@@ -44,8 +44,8 @@ const HeroSection = () => {
                             <Spline
                                 onLoad={handleLoad}
                                 style={{ display: loading ? 'none' : 'block' }}
-                                scene="https://prod.spline.design/UTFMrrw71-cpURyo/scene.splinecode" /
-                            >
+                                scene="https://prod.spline.design/UTFMrrw71-cpURyo/scene.splinecode"
+                                />
                         </div>
 
                     </div>
