@@ -6,9 +6,9 @@
   background: #DFFF00;
   color: #222A35;
 }
+/* cursor:none!important; */
 
 *{
-  cursor:none!important;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
