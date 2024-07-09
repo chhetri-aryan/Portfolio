@@ -141,7 +141,9 @@ export const education = [
   },
   {
     id: 1,
-    img:"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/345805177-44783f14-aaf1-4ee5-a4f0-1d74fa64a08d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T105503Z&X-Amz-Expires=300&X-Amz-Signature=39b9e46ba8036a0f80f73fc6b080702224882d4634fd907328e88a6e3cf4cc42&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820379489",
+    img:
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/logo%201.png",
+
     school: "TCV School Selakui",
     date: "May 2019 - Jul 2021",
     grade: "86.2%",
@@ -150,7 +152,8 @@ export const education = [
   },
   {
     id: 2,
-    img:"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/345805177-44783f14-aaf1-4ee5-a4f0-1d74fa64a08d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T105503Z&X-Amz-Expires=300&X-Amz-Signature=39b9e46ba8036a0f80f73fc6b080702224882d4634fd907328e88a6e3cf4cc42&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820379489",
+    img:
+"https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/logo%201.png",
     school: "Upper TCV School",
     date: "Apr 2017 - May 2019",
     grade: "89.4%",
@@ -167,7 +170,7 @@ export const projects = [
     description:
       "MiniTwit is a fully functional Twitter clone designed to deliver a comprehensive social media experience. The project focuses on replicating core Twitter features while providing an engaging and seamless user interface.",
     image:
-"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/345807077-f0583530-6a93-4a2f-a136-313ab7eadc6c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T110158Z&X-Amz-Expires=300&X-Amz-Signature=0c005b54832fb6f2abb2a32942041b5362f566a138266d3e9e6f2f27a33ea341&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820379489",
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-10%20225839.png",
     tags: [
      
       "React Js",
@@ -190,7 +193,7 @@ export const projects = [
     description:
       "Sneak is a single-page ecommerce application tailored specifically for sneaker enthusiasts. The platform provides a seamless and engaging user experience for browsing and purchasing sneakers, ensuring both front-end appeal and robust back-end functionality.",
     image:
-"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/345806824-fcfe72be-e707-4628-92a9-94f1db1b97ae.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T110107Z&X-Amz-Expires=300&X-Amz-Signature=43e277596aaf26362274ce2a5af250e536459b3f31a18abe0c60aaf0ca0cfced&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820379489",
+"https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot_27-6-2024_141324_.jpeg",
     tags: [
      
       "React Js",
@@ -211,7 +214,7 @@ export const projects = [
     description:
     "The Contact Listweb application is built using ASP.NET Core MVC and utilizes SQL Server for database management. It serves as a comprehensive solution for managing and organizing contacts efficiently.",
     image:
-"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/345807355-efd6106d-fdc9-4955-9421-dbac53aceef0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T110250Z&X-Amz-Expires=300&X-Amz-Signature=3c26d80e8a13d52335397d6ed760acc2a72c8bdeff1d42b19f9442f20eedb018&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820379489",
+"https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-27%20140612.png",
     tags: [
      "HTML",
      "CSS",
@@ -229,7 +232,7 @@ export const projects = [
     description:
       "AI in Vehicle Countingis a Python application designed to automatically count the number of vehicles in video footage. Leveraging the power of computer vision, the application provides accurate and efficient vehicle counting, making it an ideal solution for traffic monitoring and analysis.",
     image:
-"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/345807592-9071635e-de0f-4693-baaf-6390484dc165.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T110355Z&X-Amz-Expires=300&X-Amz-Signature=c9248b926f6ee5de8f19dffe5059b3322c229198361ecb77e0fb6be732dd8426&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820379489",
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-27%20104125.png",
     tags: [
      "Python",
      "OpenCV",
@@ -246,7 +249,7 @@ export const projects = [
     description:
     "Post Automation for LinkedIn is an advanced Python-based application designed to streamline social media scheduling and analytics for LinkedIn. By leveraging cutting-edge technologies, the project significantly reduces manual workload and boosts engagement rates, making social media management more efficient and effective.",
     image:
-"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/345807856-2e0b81c0-dec3-406d-b728-0c77af236309.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T110440Z&X-Amz-Expires=300&X-Amz-Signature=de6eb8f7159867135b7e4a3cc87a0f69de1632e528f1c63fbe0ee8f06f96ecfb&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820379489",
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-27%20135231.png",
     tags: [
       "Python",
       "Open AI",
@@ -264,7 +267,7 @@ export const projects = [
     description:
     "The To-Do application is a sleek and functional task management tool built using ReactJS, showcasing a solid understanding of HTML, CSS, JavaScript, React components, hooks, and Redux for state management. With Tailwind CSS providing a modern and responsive design, the application allows users to effortlessly add, view, and delete tasks. The use of React hooks ensures efficient state and lifecycle management, while Redux offers a centralized store for handling the state of tasks seamlessly. This project not only highlights core frontend development skills but also emphasizes effective state management and responsive design principles.",
     image:
-"https://github-production-user-asset-6210df.s3.amazonaws.com/72271864/346023987-b3a74461-dabd-412e-91a8-9fc2791bed15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240705%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240705T061633Z&X-Amz-Expires=300&X-Amz-Signature=bf963ff112f93acfeecf5c391e0603997e96ec3bae937cf40f2a0d4a2bf0f2a2&X-Amz-SignedHeaders=host&actor_id=72271864&key_id=0&repo_id=820219947",
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-30%20224233.png",
     tags: [
       "ReactJS",
       "REDUX",
