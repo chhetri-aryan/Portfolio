@@ -261,7 +261,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: ,
+    id: 6,
     title: "Todo",
     date: "Jun 2024 - Jul 2024",
     description:
@@ -284,32 +284,34 @@ export const projects = [
     description:
     "The Note Pad app, developed in Android using Kotlin, XML, and SQL, offers a straightforward interface for managing notes. It combines a minimalist design with efficient data storage, allowing for easy note creation, editing, and deletion. The app emphasizes quick access and reliability, showcasing advanced Android development techniques.",
     image:
-    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-30%20224233.png",
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/notepad.jpg",
     tags: [
+      "Android Studio",
       "Kotlin",
       "XML",
       "SQL",
     ],
-    category: "mobile app",
+    category: "android app",
     github: "https://github.com/chhetri-aryan/Note-Pad",
     webapp: "",
   },
   {
     id: 8,
-    title: "Todo",
-    date: "Jun 2024 - Jul 2024",
+    title: "Famous People",
+    date: "Aug 2023 - Oct 2023",
     description:
-    "The To-Do application is a sleek and functional task management tool built using ReactJS, showcasing a solid understanding of HTML, CSS, JavaScript, React components, hooks, and Redux for state management. With Tailwind CSS providing a modern and responsive design, the application allows users to effortlessly add, view, and delete tasks. The use of React hooks ensures efficient state and lifecycle management, while Redux offers a centralized store for handling the state of tasks seamlessly. This project not only highlights core frontend development skills but also emphasizes effective state management and responsive design principles.",
+    "Famous People is an elegantly designed Android application, meticulously crafted using Jetpack Compose alongside Material UI 3, to offer a rich and interactive user experience. This app serves as a digital encyclopedia, providing detailed information about renowned personalities from various fields. Leveraging the power of Jetpack Compose, the app features a modern, declarative UI that is both responsive and intuitive, ensuring seamless navigation and accessibility. Material UI 3 enhances the aesthetic appeal with its adaptive, dynamic design system, allowing for a visually stunning presentation of content. The project showcases advanced Android development skills, emphasizing UI/UX design, data management, and API integration.",
     image:
-    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-30%20224233.png",
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/android_famouspeople.jpg",
     tags: [
-      "ReactJS",
-      "REDUX",
+      "Android Studio",
+      "Kotlin",
+      "Jetpack Compose"
       
     ],
-    category: "web app",
+    category: "android app",
     github: "https://github.com/chhetri-aryan/Todo-List",
-    webapp: "https://todo-red-gamma.vercel.app/",
+    webapp: "",
   },
 ];
 

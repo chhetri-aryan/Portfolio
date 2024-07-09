@@ -41,7 +41,7 @@ const Card = styled.div`
 `
 
 const Image = styled.img`
-    width: 100%;
+    // width: 100%;
     height: 180px;
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
@@ -136,7 +136,7 @@ const ProjectCards = ({project}) => {
     
     return (
         <Card onClick={open}>
-            <Image src={project.image}/>
+            <Image src={project.image} className={project.category === 'android app' ? 'object-contain' : ''}/>
             <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag key={index} >{tag}</Tag>
@@ -155,7 +155,6 @@ const ProjectCards = ({project}) => {
             {/* <Button>View Project</Button> */}
             <ProjectModal project={project} isOpen={isOpen} close={close} />
         </Card>
-
     )
 }
 

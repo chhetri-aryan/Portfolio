@@ -137,7 +137,7 @@ export default function ProjectModal({ project, close, isOpen }) {
                   </div>
                 </Title>
 
-                <Image src={project.image} />
+                <Image src={project.image}  className={project.category === 'android app' ? 'h-80 object-contain' : ''}/>
                 <Description>
                   {project.description}
                 </Description>
