@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { education } from '../../data/constants';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -156,8 +156,6 @@ const Card = styled.div`
   border: 0.1px solid #854ce6;
 `;
 
-let line = styled.div`${({ theme }) => theme.text_primary};`
-
 
 const Education = ({ darkmode }) => {
     return (
@@ -168,7 +166,7 @@ const Education = ({ darkmode }) => {
                     My education has been a journey of self-discovery and growth.
                 </Desc>
                 <VerticalTimeline className=''
-                    lineColor={darkmode ? "black" : "white"}
+                    lineColor={"#854ce6"}
                 >
                     {
                         education.map(element => {
