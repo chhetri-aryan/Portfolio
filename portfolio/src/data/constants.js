@@ -261,7 +261,41 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 6,
+    id: ,
+    title: "Todo",
+    date: "Jun 2024 - Jul 2024",
+    description:
+    "The To-Do application is a sleek and functional task management tool built using ReactJS, showcasing a solid understanding of HTML, CSS, JavaScript, React components, hooks, and Redux for state management. With Tailwind CSS providing a modern and responsive design, the application allows users to effortlessly add, view, and delete tasks. The use of React hooks ensures efficient state and lifecycle management, while Redux offers a centralized store for handling the state of tasks seamlessly. This project not only highlights core frontend development skills but also emphasizes effective state management and responsive design principles.",
+    image:
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-30%20224233.png",
+    tags: [
+      "ReactJS",
+      "REDUX",
+      
+    ],
+    category: "web app",
+    github: "https://github.com/chhetri-aryan/Todo-List",
+    webapp: "https://todo-red-gamma.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Note Pad",
+    date: "Mar 2024 - Apr 2024",
+    description:
+    "The Note Pad app, developed in Android using Kotlin, XML, and SQL, offers a straightforward interface for managing notes. It combines a minimalist design with efficient data storage, allowing for easy note creation, editing, and deletion. The app emphasizes quick access and reliability, showcasing advanced Android development techniques.",
+    image:
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-30%20224233.png",
+    tags: [
+      "Kotlin",
+      "XML",
+      "SQL",
+    ],
+    category: "mobile app",
+    github: "https://github.com/chhetri-aryan/Note-Pad",
+    webapp: "",
+  },
+  {
+    id: 8,
     title: "Todo",
     date: "Jun 2024 - Jul 2024",
     description:
