@@ -38,8 +38,7 @@ const HeroSection = () => {
 
                         </div>
 
-
-
+                    
                         <div id="Right" className='lg:order-2 sm:order-1 lg:-m-56'>
 
                             <Spline
@@ -48,11 +47,6 @@ const HeroSection = () => {
                                 scene="https://prod.spline.design/UTFMrrw71-cpURyo/scene.splinecode" /
                             >
                         </div>
-
-
-
-
-
 
                     </div>
                 </HeroInnerContainer>
