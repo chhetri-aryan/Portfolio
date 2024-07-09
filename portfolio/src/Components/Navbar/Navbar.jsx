@@ -13,7 +13,13 @@ const Navbar = ({ toggleTheme }) => {
 
   const [enabled, setEnabled] = useState(false);
 
-  useEffect(toggleTheme, [enabled])
+  // useEffect(toggleTheme, [enabled]);
+
+  const handleThemeChange = () => {
+    setEnabled(!enabled);
+    toggleTheme();
+  }
+
   const [isOpen, setIsOpen] = useState(false);
   var theme = useTheme();
 
@@ -40,7 +46,7 @@ const Navbar = ({ toggleTheme }) => {
 
           <Switch
             checked={enabled}
-            onChange={setEnabled}
+            onChange={handleThemeChange}
             className={`${enabled ? 'bg-blue-600' : 'bg-gray-700'
               } relative inline-flex h-6 w-11 items-center rounded-full`}
           >
