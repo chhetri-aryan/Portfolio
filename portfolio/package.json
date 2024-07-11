@@ -21,6 +21,7 @@
     "framer-motion-3d": "^11.2.0",
     "ms-cursor": "^1.2.1",
     "react": "^18.2.0",
+    "react-dark-mode-toggle": "^0.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
     "react-loader-spinner": "^6.1.6",

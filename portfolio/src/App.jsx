@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import { ThemeProvider } from 'styled-components'
@@ -10,6 +10,7 @@ import HeroSection from './Components/HeroSection/HeroSection';
 import Contact from './Components/Contact/Contact'
 import Education from './Components/Education/Education'
 import Project from './Components/Projects/Project.jsx';
+import Footer from './Components/Footer/Footer';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -42,6 +43,7 @@ function App() {
             <Education darkMode={darkMode} />
             </Wrapper>
             <Contact />
+            <Footer darkMode={darkMode} />
           </Body>
         </Router>
       </ThemeProvider>

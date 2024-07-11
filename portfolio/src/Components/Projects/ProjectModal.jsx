@@ -8,7 +8,6 @@ import styled from 'styled-components'
 const Card = styled.div`
    
     background-color: ${({ theme }) => theme.card - 10};
-    cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
     overflow: hidden;
@@ -138,7 +137,7 @@ export default function ProjectModal({ project, close, isOpen }) {
                 </Title>
 
                 <Image src={project.image}  className={project.category === 'android app' ? 'h-80 object-contain' : ''}/>
-                <Description>
+                <Description className='text-justify'>
                   {project.description}
                 </Description>
 
@@ -150,14 +149,14 @@ export default function ProjectModal({ project, close, isOpen }) {
 
                 <Link to={project.github} target='_blank'>
                   <Description className='underline decoration-4 hover:decoration-sky-400'>
-                    GitHub Repo. 👆
+                    GitHub Link 👆
                   </Description>
                 </Link>
                 {
                   project.webapp &&
                   <Link to={project.webapp} target='_blank'>
                     <Description className='underline decoration-4 hover:decoration-sky-400'>
-                      Hosted App. 👆
+                      Deployed Link. 👆
                     </Description>
                   </Link>
                 }

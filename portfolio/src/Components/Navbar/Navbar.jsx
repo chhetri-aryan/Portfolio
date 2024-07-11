@@ -5,7 +5,7 @@ import { Bio } from '../../data/constants';
 import { Switch } from '@headlessui/react'
 import { useState } from 'react';
 import { DiFsharp } from "react-icons/di";
-
+import DarkModeToggle from "react-dark-mode-toggle";
 import { useTheme } from 'styled-components';
 
 
@@ -28,7 +28,7 @@ const Navbar = ({ toggleTheme }) => {
       <NavbarContainer>
         <NavLogo to='/'>
           <div style={{ display: "flex", alignItems: "center", color: theme.primary, marginBottom: '20', cursor: 'pointer' }}>
-            <DiFsharp size="3rem"/> <Span>Portfolio</Span>
+            <DiFsharp size="3rem" /> <Span>Portfolio</Span>
           </div>
         </NavLogo>
 
@@ -44,18 +44,13 @@ const Navbar = ({ toggleTheme }) => {
           <NavLink href='#projects'>Projects</NavLink>
           <NavLink href='#education'>Education</NavLink>
 
-          <Switch
-            checked={enabled}
+          <DarkModeToggle
             onChange={handleThemeChange}
-            className={`${enabled ? 'bg-blue-600' : 'bg-gray-700'
-              } relative inline-flex h-6 w-11 items-center rounded-full`}
-          >
-            <span className="sr-only">Enable dark mode</span>
-            <span
-              className={`${enabled ? 'translate-x-6' : 'translate-x-1'
-                } inline-block h-4 w-4 transform rounded-full bg-white transition`}
-            />
-          </Switch>
+            checked={!enabled}
+            size={50}
+          />
+
+
 
         </NavItems>
 
