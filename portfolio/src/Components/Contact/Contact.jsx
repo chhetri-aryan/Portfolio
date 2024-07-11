@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import { toast } from 'react-toastify';
 
 const Container = styled.div`
 display: flex;
@@ -130,13 +131,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form.current.from_email);
+   
     emailjs.sendForm('service_b8ip5eq', 'template_jxwlw93', form.current, 'qsZnrcYsAO4eZ4QhY' )
       .then((result) => {
         setOpen(true);
         form.current.reset();
+        toast.success("Email sent successfully!");
       }, (error) => {
-        console.log(error.text + "Error");
+        toast.error("Failed to send email!");
       });
   }
 
@@ -146,7 +148,7 @@ const Contact = () => {
     <Container>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>Feel free to reach me out!</Desc>
+        <Desc>Feel free to Contact Me!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 👻</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
@@ -155,13 +157,6 @@ const Contact = () => {
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
       </Wrapper>
     </Container>
   )
