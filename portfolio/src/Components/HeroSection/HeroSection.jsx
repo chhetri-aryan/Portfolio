@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div id="about" className=''>
             <HeroContainer>
                 <HeroInnerContainer >
-                    <div className='grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-32'>
+                    <div className='grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-32 will-change-auto'>
 
                         <div id="Left" className='order-2 justify-center'>
                             <Title>Hi, I am <br /> {Bio.name}</Title>
@@ -37,6 +37,7 @@ const HeroSection = () => {
 
                             <Spline
                                 scene="https://prod.spline.design/UTFMrrw71-cpURyo/scene.splinecode"
+                                className='sm:object-cover sm:h-96 sm:w-96 lg:h-96 lg:w-96 md:h-96 md:w-96'
                             />
                         </div>
 
