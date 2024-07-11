@@ -11,6 +11,9 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1NlhNK3HQiUbkE8oLwU3RjQZ-2c569deI/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/aryan-chhetri/",
+  x: "https://x.com/AryanChhetri_7",
+  instagram: "https://www.instagram.com/aryan_chhetri_04/",
+
 
 };
 

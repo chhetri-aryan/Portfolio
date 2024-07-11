@@ -1,34 +1,39 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faTwitter, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitter, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Bio } from '../../data/constants';
+import { Link } from 'react-router-dom';
 
 const Footer = ({ darkMode }) => {
     return (
         <div>
-            <footer className="rounded-lg m-10" style={{ backgroundColor: darkMode ? "#000000" : "#854CE6" }}>
+            <footer className="rounded-lg m-10 mx-4 md:mx-28 border border-violet-600" style={{ backgroundColor: darkMode ? "#000000" : "#f0f0f0" }}>
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-                    <div className="sm:flex sm:items-center sm:justify-between">
-                        <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
+                    <div className="sm:flex sm:items-center sm:justify-center">
+                        <ul className="flex flex-wrap justify-center mb-6 font-medium sm:mb-0" style={{ color: darkMode ? "#FFFFFF" : "#000000" }}>
                             <li className='hover:underline me-4 md:me-6'>
-                                <FontAwesomeIcon icon={faLinkedin} className="me-2 size-6" />
-                                LinkedIn
+                                <Link to={Bio.linkedin} target='_blank'>
+                                    <FontAwesomeIcon icon={faLinkedin} className="me-2 size-6" />
+                                    LinkedIn
+                                </Link>
                             </li>
                             <li className='hover:underline me-4 md:me-6'>
-                                <FontAwesomeIcon icon={faTwitter}  className="me-2 size-6" />
-                                Twitter
+                                <Link to={Bio.x} target='_blank'>
+                                    <FontAwesomeIcon icon={faXTwitter}  className="me-2 size-6"  />
+                                    X
+                                </Link>
                             </li>
+                           
                             <li className='hover:underline me-4 md:me-6'>
-                                <FontAwesomeIcon icon={faInstagram}  className="me-2 size-6"  />
-                                Instagram
-                            </li>
-                            <li className='hover:underline me-4 md:me-6'>
-                                <FontAwesomeIcon icon={faWhatsapp} className="me-2 size-6"  />
-                                WhatsApp
+                                <Link to={Bio.instagram} target='_blank'>
+                                    <FontAwesomeIcon icon={faInstagram}  className="me-2 size-6"  />
+                                    Instagram
+                                </Link>
                             </li>
                         </ul>
                     </div>
-                    <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                    <div className="text-sm text-white text-center">
+                    <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"  />
+                    <div className="text-sm text-center" style={{ color: darkMode ? "#FFFFFF" : "#000000" }}>
                         <p>&copy; 2024 Portfolio. All rights reserved.</p>
                     </div>
                 </div>

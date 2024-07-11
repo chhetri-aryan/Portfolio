@@ -1,19 +1,14 @@
-import React, { useEffect } from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
+import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent'
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { Switch } from '@headlessui/react'
 import { useState } from 'react';
 import { DiFsharp } from "react-icons/di";
 import DarkModeToggle from "react-dark-mode-toggle";
 import { useTheme } from 'styled-components';
 
-
 const Navbar = ({ toggleTheme }) => {
 
   const [enabled, setEnabled] = useState(false);
-
-  // useEffect(toggleTheme, [enabled]);
 
   const handleThemeChange = () => {
     setEnabled(!enabled);
@@ -58,8 +53,6 @@ const Navbar = ({ toggleTheme }) => {
             checked={!enabled}
             size={50}
           />
-
-
 
         </NavItems>
 
