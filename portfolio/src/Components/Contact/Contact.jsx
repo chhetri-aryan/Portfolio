@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
 import { toast } from 'react-toastify';
@@ -125,24 +125,36 @@ const ContactButton = styled.input`
 
 const Contact = () => {
 
-  const resolveAfter3Sec = new Promise(resolve => setTimeout(resolve, 3000));
-toast.promise(
-    resolveAfter3Sec,
-    {
-      pending: 'Promise is pending',
-      success: 'Promise resolved 👌',
-      error: 'Promise rejected 🤯'
-    }
-)
-  
-
   //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
+  const [formData, setFormData] = useState({
+    from_email: '',
+    from_name: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+  
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    for (const key in formData) {
+      if (formData[key] === '') {
+        toast.error('Please fill all the fields! 😕');
+        return;
+      }
+    }
+   
     const sendEmailPromise = new Promise((resolve, reject) => {
       emailjs.sendForm('service_b8ip5eq', 'template_jxwlw93', form.current, 'qsZnrcYsAO4eZ4QhY')
         .then((result) => {
@@ -170,6 +182,7 @@ toast.promise(
     });
   };
 
+
   return (
     <Container>
       <Wrapper>
@@ -177,10 +190,10 @@ toast.promise(
         <Desc>Feel free to Contact Me!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 👻</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
+          <ContactInput placeholder="Your Email" name="from_email" value={formData.from_email} onChange={handleChange} />
+          <ContactInput placeholder="Your Name" name="from_name" value={formData.from_name} onChange={handleChange} />
+          <ContactInput placeholder="Subject" name="subject" value={formData.from_subject} onChange={handleChange} />
+          <ContactInputMessage placeholder="Message" rows="4" name="message" value={formData.from_message} onChange={handleChange} />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
       </Wrapper>
