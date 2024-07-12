@@ -125,24 +125,50 @@ const ContactButton = styled.input`
 
 const Contact = () => {
 
+  const resolveAfter3Sec = new Promise(resolve => setTimeout(resolve, 3000));
+toast.promise(
+    resolveAfter3Sec,
+    {
+      pending: 'Promise is pending',
+      success: 'Promise resolved 👌',
+      error: 'Promise rejected 🤯'
+    }
+)
+  
+
   //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   
-    emailjs.sendForm('service_b8ip5eq', 'template_jxwlw93', form.current, 'qsZnrcYsAO4eZ4QhY' )
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-        toast.success("Email sent successfully!");
-      }, (error) => {
-        toast.error("Failed to send email!");
-      });
-  }
 
+    const sendEmailPromise = new Promise((resolve, reject) => {
+      emailjs.sendForm('service_b8ip5eq', 'template_jxwlw93', form.current, 'qsZnrcYsAO4eZ4QhY')
+        .then((result) => {
+          resolve(result);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
 
+    toast.promise(
+      sendEmailPromise,
+      {
+        pending: 'Sending email...',
+        success: 'Email sent successfully! 👌',
+        error: 'Failed to send email! 🤯'
+      }
+    )
+    .then(() => {
+      setOpen(true);
+      form.current.reset();
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  };
 
   return (
     <Container>
