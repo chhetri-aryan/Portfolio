@@ -33,7 +33,7 @@ const Navbar = ({ toggleTheme }) => {
                 onChange={handleThemeChange}
                 checked={!enabled}
                 size={50}
-                className=''
+                className='me-2'
               />
               <FaBars onClick={() => {
                 setIsOpen(!isOpen)
