@@ -51,7 +51,7 @@ const Navbar = ({ toggleTheme }) => {
           <DarkModeToggle
             onChange={handleThemeChange}
             checked={!enabled}
-            size={50}
+            size={60}
           />
 
         </NavItems>

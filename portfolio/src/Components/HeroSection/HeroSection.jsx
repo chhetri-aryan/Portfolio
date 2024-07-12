@@ -12,11 +12,9 @@ const HeroSection = () => {
             <HeroContainer>
                 <HeroInnerContainer >
                     <div className='grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-32'>
-
-                        <div id="Left" className='order-2 justify-center'>
+                        <div id="Left" className='order-2 justify-center mt-2'>
                             <Title>Hi, I am <br /> {Bio.name}</Title>
-                            <div>
-                                <TextLoop>
+                                <TextLoop className='flex flex-wrap'>
                                     I am a
                                     <Span>
                                         <Typewriter
@@ -28,8 +26,7 @@ const HeroSection = () => {
                                         />
                                     </Span>
                                 </TextLoop>
-
-                            </div>
+                          
                             <SubTitle className='text-justify'>{Bio.description}</SubTitle>
                             <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
 
@@ -40,7 +37,7 @@ const HeroSection = () => {
 
                             <Spline
                                 scene="https://prod.spline.design/UTFMrrw71-cpURyo/scene.splinecode"
-                                className='sm:object-cover sm:h-96 sm:w-96 lg:h-96 lg:w-96 md:h-96 md:w-96'
+                                // className=' sm:h-96 sm:w-96 lg:h-96 lg:w-96 md:h-96 md:w-96 '
                             />
                         </div>
 
