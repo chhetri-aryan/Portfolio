@@ -27,20 +27,20 @@ const Navbar = ({ toggleTheme }) => {
           </div>
         </NavLogo>
 
-        <MobileIcon>
-          <div className='flex' style={{marginBlockEnd:20}}>
-            <DarkModeToggle
-              onChange={handleThemeChange}
-              checked={!enabled}
-              size={50}
-              className='me-2'
-            />
-            <FaBars onClick={() => {
-              setIsOpen(!isOpen)
-            }} />
-          </div>
+          <MobileIcon>
+            <div className='flex mt-6 mr-6' >
+              <DarkModeToggle
+                onChange={handleThemeChange}
+                checked={!enabled}
+                size={50}
+                className=''
+              />
+              <FaBars onClick={() => {
+                setIsOpen(!isOpen)
+              }} />
+            </div>
+          </MobileIcon>
 
-        </MobileIcon>
 
         <NavItems>
           <NavLink href="#about">About</NavLink>
@@ -68,7 +68,7 @@ const Navbar = ({ toggleTheme }) => {
             <MobileLink href='#skills' onClick={() => {
               setIsOpen(!isOpen)
             }}>Skills</MobileLink>
-           
+
             <MobileLink href='#projects' onClick={() => {
               setIsOpen(!isOpen)
             }}>Projects</MobileLink>

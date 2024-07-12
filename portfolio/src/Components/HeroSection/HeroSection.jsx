@@ -11,22 +11,25 @@ const HeroSection = () => {
         <div id="about" className=''>
             <HeroContainer>
                 <HeroInnerContainer >
-                    <div className='grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-32 will-change-auto'>
+                    <div className='grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-32'>
 
                         <div id="Left" className='order-2 justify-center'>
                             <Title>Hi, I am <br /> {Bio.name}</Title>
-                            <TextLoop>
-                                I am a
-                                <Span>
-                                    <Typewriter
-                                        options={{
-                                            strings: Bio.roles,
-                                            autoStart: true,
-                                            loop: true,
-                                        }}
-                                    />
-                                </Span>
-                            </TextLoop>
+                            <div>
+                                <TextLoop>
+                                    I am a
+                                    <Span>
+                                        <Typewriter
+                                            options={{
+                                                strings: Bio.roles,
+                                                autoStart: true,
+                                                loop: true,
+                                            }}
+                                        />
+                                    </Span>
+                                </TextLoop>
+
+                            </div>
                             <SubTitle className='text-justify'>{Bio.description}</SubTitle>
                             <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
 

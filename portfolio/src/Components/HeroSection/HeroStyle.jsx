@@ -43,21 +43,6 @@ export const HeroBg = styled.div`
 `;
 
 
-// export const HeroBg1 = styled.div`
-//   position: absolute;
-// justify-content: center;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: -1; /* Send it behind other content */
-//   @media (max-width: 960px) {
-//     justify-content: center;
-//     padding: 0 0px;
-//   }
-// `;
 
 export const HeroInnerContainer = styled.div`
   position: relative;
