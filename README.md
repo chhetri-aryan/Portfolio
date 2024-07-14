@@ -1,6 +1,6 @@
-# Portfolio
+# Portfolio: https://portfolio-aryan-chhetris-projects.vercel.app/
 Welcome to my portfolio, a single-page application developed using ReactJS. This project serves as a comprehensive showcase of my skills, educational background, and projects, demonstrating my proficiency in modern web development.
-# Deployed Link: https://portfolio-aryan-chhetris-projects.vercel.app/
+
 
 ![image](https://github.com/user-attachments/assets/e7e85eba-aaef-43fa-944a-cc5e6a7fef0b)
 ![image](https://github.com/user-attachments/assets/fb729c3c-d6c3-46a8-9dc8-c27f15dbba9c)
