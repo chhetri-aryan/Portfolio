@@ -32,8 +32,9 @@ const Navbar = ({ toggleTheme }) => {
               <DarkModeToggle
                 onChange={handleThemeChange}
                 checked={!enabled}
-                size={50}
-                className='me-2'
+                size={60}
+                speed={2.5}
+                className='me-2 -mt-0.5'
               />
               <FaBars onClick={() => {
                 setIsOpen(!isOpen)
@@ -51,6 +52,7 @@ const Navbar = ({ toggleTheme }) => {
           <DarkModeToggle
             onChange={handleThemeChange}
             checked={!enabled}
+            speed={2.5}
             size={60}
           />
 
