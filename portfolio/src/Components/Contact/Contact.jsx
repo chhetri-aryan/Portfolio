@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Snackbar } from '@mui/material';
 import { toast } from 'react-toastify';
 
 const Container = styled.div`
@@ -16,7 +15,6 @@ align-items: center;
     padding: 0px;
 }
 `
-
 const Wrapper = styled.div`
 position: relative;
 display: flex;
