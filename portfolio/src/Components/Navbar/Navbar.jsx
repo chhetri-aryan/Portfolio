@@ -1,7 +1,7 @@
 import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent'
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { DiFsharp } from "react-icons/di";
 import DarkModeToggle from "react-dark-mode-toggle";
 import { useTheme } from 'styled-components';
@@ -9,6 +9,21 @@ import { useTheme } from 'styled-components';
 const Navbar = ({ toggleTheme }) => {
 
   const [enabled, setEnabled] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsAtTop(window.scrollY === 0 || window.scrollY < 80);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        handleScroll();
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
   const handleThemeChange = () => {
     setEnabled(!enabled);
@@ -19,10 +34,10 @@ const Navbar = ({ toggleTheme }) => {
   var theme = useTheme();
 
   return (
-    <Nav className='h-screen'>
+    <Nav className='h-screen' theme={theme} isAtTop={isAtTop}>
       <NavbarContainer>
         <NavLogo to='/'>
-          <div style={{ display: "flex", alignItems: "center", color: theme.primary, marginBottom: '20', cursor: 'pointer' }}>
+          <div className='hover:animate-pulse' style={{ display: "flex", alignItems: "center", color: theme.primary, marginBottom: '20', cursor: 'pointer' }}>
             <DiFsharp size="3rem" /> <Span>Portfolio</Span>
           </div>
         </NavLogo>
@@ -53,7 +68,7 @@ const Navbar = ({ toggleTheme }) => {
             onChange={handleThemeChange}
             checked={!enabled}
             speed={2.5}
-            size={60}
+            size={70}
           />
 
         </NavItems>

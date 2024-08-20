@@ -15,6 +15,7 @@ align-items: center;
     padding: 0px;
 }
 `
+
 const Wrapper = styled.div`
 position: relative;
 display: flex;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import _default from '../../themes/default';
 
 export const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
+     background-color: ${({ theme, isAtTop }) => isAtTop ? theme.card_light : `${theme.card_light}99`};
     height: 80px;
     display: flex;
     align-items: center;
@@ -12,10 +12,14 @@ export const Nav = styled.div`
     position: sticky;
     top: 0;
     z-index: 10;
+    backdrop-filter: blur(3px);
+    
     @media (max-width: 960px) {
-        trastion: 0.8s all ease;
+        transition: background-color 0.8s ease, box-shadow 0.8s ease;
     }
 `;
+
+
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
