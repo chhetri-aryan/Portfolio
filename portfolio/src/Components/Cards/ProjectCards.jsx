@@ -98,12 +98,12 @@ const Date = styled.div`
 
 const Description = styled.div`
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 90};
-    overflow: hidden;
+    color: ${({ theme }) => theme.text_secondary + 99};
     margin-top: 8px;
     display: -webkit-box;
     max-width: 100%;
     -webkit-line-clamp: 3;
+    overflow: hidden;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 `
@@ -145,7 +145,7 @@ const ProjectCards = ({project}) => {
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
-                <Description className='text-justify'>{project.description}</Description>
+                <Description className='text-balance'>{project.description}</Description>
             </Details>
             <Members>
                 {project.member?.map((member) => (

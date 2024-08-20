@@ -69,11 +69,11 @@ export const ToggleButton = styled.div`
     cursor: pointer;
     ${({ active, theme }) =>
         active && `
-    background: ${theme.primary + 20};
+    background: ${theme.primary + 30};
     `
     }
     &:hover {
-        background: ${({ theme }) => theme.primary + 8};
+        background: ${({ theme }) => theme.primary + 15};
     }
     @media (max-width: 768px) {
         padding: 6px 8px;
@@ -92,14 +92,4 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 28px;
     flex-wrap: wrap;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 32px;
-    // grid-auto-rows: minmax(100px, auto);
-    // @media (max-width: 960px) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
-    // @media (max-width: 640px) {
-    //     grid-template-columns: repeat(1, 1fr);
-    // }
 `;

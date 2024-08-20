@@ -233,7 +233,7 @@ export const projects = [
     title: "Ai in Vehicle Counting",
     date: "May 2023 - Apr 2023",
     description:
-      "AI in Vehicle Countingis a Python application designed to automatically count the number of vehicles in video footage. Leveraging the power of computer vision, the application provides accurate and efficient vehicle counting, making it an ideal solution for traffic monitoring and analysis.",
+      "AI in Vehicle Counting is a Python application designed to automatically count the number of vehicles in video footage. Leveraging the power of computer vision, the application provides accurate and efficient vehicle counting, making it an ideal solution for traffic monitoring and analysis.",
     image:
     "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/Screenshot%202024-06-27%20104125.png",
     tags: [
