@@ -9,7 +9,7 @@ export const Bio = {
     "Highly motivated and versatile software developer with a proficient command of Java. Possessing a strong aptitude for quickly grasping new technologies and effectively applying them to practical projects. ",
   github: "https://github.com/chhetri-aryan",
   resume:
-    "https://drive.google.com/file/d/1NlhNK3HQiUbkE8oLwU3RjQZ-2c569deI/view?usp=drive_link",
+    "https://drive.google.com/file/d/1xRYx8JFVoWVcwBWUAd6Fa4QU55QNbyvO/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/aryan-chhetri/",
   x: "https://x.com/AryanChhetri_7",
   instagram: "https://www.instagram.com/aryan_chhetri_04/",
@@ -166,6 +166,30 @@ export const education = [
 ];
 
 export const projects = [
+
+  {
+    id: 1,
+    title: "StrideSync",
+    date: "Sep 2024 - Nov 2024",
+    description:
+    "StrideSync is an Android application that tracks your steps, calories burned, and distance covered. It also provides a settings screen where users can view and edit their profile information.",
+
+    image:
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/image.png",
+    tags: [
+     
+      "Android Studio",
+      "Servince",
+      "Notification",
+      "Kotlin",
+      "XML",
+      "SQL",
+    ],
+    category: "android app",
+    github: "https://github.com/chhetri-aryan/StrideSync",
+    webapp: "",
+  },
+
   {
     id: 1,
     title: "MiniTwit",

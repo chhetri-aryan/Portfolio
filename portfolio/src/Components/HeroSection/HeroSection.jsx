@@ -3,6 +3,7 @@ import { HeroContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle, Res
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
 import Spline from '@splinetool/react-spline';
+import image from '../../assets/img/hero_img.png'
 
 const HeroSection = () => {
 
@@ -31,12 +32,13 @@ const HeroSection = () => {
                             <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
 
                         </div>
-
-
                         <div id="Right" className='lg:order-2 sm:order-1 -m-56 h-92 '>
-              <Spline
+
+
+                            <img src={image} alt="hero" className='mt-10 w-full h-screen object-cover' />
+              {/* <Spline
                 scene="https://prod.spline.design/UTFMrrw71-cpURyo/scene.splinecode"
-              />
+              /> */}
             </div>
 
                     </div>
