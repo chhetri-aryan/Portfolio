@@ -1,9 +1,13 @@
 export const Bio = {
   name: "Aryan Chhetri",
   roles: [
-    "Full Stack Developer",
-    "Android Developer",
+    "Software Engineer",
+    "Frontend Developer",
+    "Backend Developer",  
+    "Mobile App Developer",
+    "UI/UX Designer",
     "Programmer",
+    "Tech Enthusiast",
   ],
   description:
     "Highly motivated and versatile software developer with a proficient command of Java. Possessing a strong aptitude for quickly grasping new technologies and effectively applying them to practical projects. ",
@@ -188,6 +192,27 @@ export const projects = [
     category: "android app",
     github: "https://github.com/chhetri-aryan/StrideSync",
     webapp: "",
+  },
+
+  {
+    id: 1,
+    title: "Paywave 🌊",
+    date: "Sep 2024 - Oct 2024",
+    description:
+    "Paywave is a payroll management system built with Laravel, designed to automate and manage employee payments. The system includes features for processing payroll, storing payment logs, and generating reports. This project also supports gender ratio analytics and automates payments via a scheduled task system. The system is intended for any organization looking to streamline their payroll process. It also includes PDF generation for payment reports and integrates with the Task Scheduler to process payments automatically.",
+    image:
+    "https://raw.githubusercontent.com/chhetri-aryan/Portfolio/master/portfolio/src/assets/img/pay.png",
+    tags: [
+     
+      "Laravel",
+      "PHP",
+      "MYSQL",
+      "Tailwind CSS",
+    ],
+    category: "web app",
+    github: "https://github.com/chhetri-aryan/Paywave",
+    webapp: "",
+
   },
 
   {
