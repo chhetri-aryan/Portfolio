@@ -7,7 +7,7 @@ export const darkTheme = {
     card:"#171721",
     card_light: '#191924',
     button:"#854CE6",
-    white:"#FFFFFF",
+    white:"#1C1E27",
     black:"#000000",
 }
 
@@ -19,5 +19,6 @@ export const lightTheme = {
     text_secondary:"#48494a",
     card_light: '#f0f0f0',
     card:"#FFFFFF",
+    white:"#CCCCFF",
     button:"#5c5b5b",
 }
